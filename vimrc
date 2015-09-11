@@ -3,6 +3,7 @@
 " 'Perfection is achieved, not when there's nothing more to add,
 "	but when there's nothing left to take away!'
 "
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 filetype plugin indent on
@@ -10,17 +11,14 @@ filetype plugin indent on
 set nobackup
 set noswapfile
 set hidden
-"set shiftwidth=4
-"set tabstop=4
-"set expandtab
 set number
-"set autoindent
-"set hlsearch
+set autoindent
+set hlsearch
 set cmdheight=1
 set textwidth=120
 set colorcolumn=+1
-set autochdir
 set mouse=a
+set autochdir
 
 " solarized
 syntax enable 
@@ -41,7 +39,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-"let g:syntastic_cpp_include_dirs = ['/Users/alexandrelucchesi/Qt/5.5/clang_64/lib/QtCore.framework/Versions/5/Headers']
 
 " nerdtree
 autocmd vimenter * NERDTree
@@ -67,4 +64,8 @@ nmap <silent> <C-j> :wincmd j<CR>
 nmap <silent> <C-k> :wincmd k<CR>
 nmap <silent> <C-l> :wincmd l<CR>
 map <C-n> :NERDTreeToggle<CR>
+
+" When yanking and pasting text, it does not change the text yanked.
+" See: http://stackoverflow.com/questions/7163947/vim-paste-multiple-times
+xnoremap p pgvy
 
