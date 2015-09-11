@@ -21,14 +21,14 @@ set mouse=a
 set autochdir
 
 " solarized
-syntax enable 
+syntax enable
 set background=dark
 colorscheme solarized
 
 " neocomplcache
-let g:neocomplcache_enable_at_startup = 1            " Enables the plugin. 
-let g:neocomplcache_enable_smart_case = 1            " Use smartcase. 
-let g:neocomplcache_enable_camel_case_completion = 1 " Use camel case completion. 
+let g:neocomplcache_enable_at_startup = 1            " Enables the plugin.
+let g:neocomplcache_enable_smart_case = 1            " Use smartcase.
+let g:neocomplcache_enable_camel_case_completion = 1 " Use camel case completion.
 
 " syntastic
 set statusline+=%#warningmsg#
