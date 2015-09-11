@@ -45,6 +45,23 @@ let g:syntastic_check_on_wq = 0
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+" Enable local (per-project) Vim settings
+"
+" The following commands search from the current directory upwards for a file
+" named '.lvimrc'. They're used in conjunction with '.localvimrc' plugin.
+"
+" WARNING: These commands are affected by 'wildignore' if it they are executed
+" after it.
+"let s:lvimrc_path = findfile(".lvimrc", ".;")
+"if s:lvimrc_path != ""
+"    exec "source " . escape(s:lvimrc_path, ' ')
+"endif
+
+" vim-localvimrc
+"let g:localvimrc_event = [ "VimEnter", "BufWinEnter" ]
+"autocmd bufenter * :SyntasticCheck
+autocmd vimenter * :SyntasticReset
+
 " ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
