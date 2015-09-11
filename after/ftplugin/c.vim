@@ -1,4 +1,4 @@
-"setlocal ts=8
-"setlocal sw=8
-"setlocal noet
+setlocal tabstop=8
+setlocal shiftwidth=8
+setlocal noexpandtab
 

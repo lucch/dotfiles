@@ -15,9 +15,10 @@ set number
 set autoindent
 set hlsearch
 set cmdheight=1
-set textwidth=120
+set textwidth=80
 set colorcolumn=+1
 set mouse=a
+"set clipboard=autoselectplus,exclude:cons\|linux
 set autochdir
 
 " solarized
