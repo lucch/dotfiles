@@ -1,4 +1,6 @@
-" " Alexandre Lucchesi's Vim Configuration
+" vim: ts=4 sw=4 et
+"
+" Alexandre Lucchesi's Vim Configuration
 "
 " 'Perfection is achieved, not when there's nothing more to add,
 "	but when there's nothing left to take away!'
@@ -16,7 +18,9 @@ set autoindent
 set hlsearch
 set cmdheight=1
 set textwidth=80
-set colorcolumn=+1
+if v:version >= 703
+    set colorcolumn=+1
+endif
 set mouse=a
 "set clipboard=autoselectplus,exclude:cons\|linux
 set autochdir
