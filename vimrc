@@ -74,6 +74,8 @@ nmap <silent> <C-k> :wincmd k<CR>
 nmap <silent> <C-l> :wincmd l<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <F2> :SyntasticToggle<CR>
+nnoremap * *`` " Highlight but don't jump to next.
+nnoremap # #``
 
 " When yanking and pasting text, it does not change the text yanked.
 " See: http://stackoverflow.com/questions/7163947/vim-paste-multiple-times
