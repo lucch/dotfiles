@@ -18,6 +18,9 @@ set autoindent
 set hlsearch
 set cmdheight=1
 set textwidth=80
+set shiftwidth=4
+set tabstop=4
+set expandtab
 if v:version >= 703
     set colorcolumn=+1
 endif
