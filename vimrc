@@ -29,6 +29,11 @@ set mouse=a
 set autochdir
 set modeline
 
+let mapleader=","
+map <leader>n :bn<cr>
+map <leader>p :bp<cr>
+map <leader>d :bd<cr>
+
 " solarized
 syntax enable
 set background=dark
