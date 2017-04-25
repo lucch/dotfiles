@@ -18,3 +18,7 @@ Upgrade all bundled plugins:
 
     git submodule foreach git pull origin master
 
+Remove a plugin/submodule:
+
+    git rm the_submodule
+    rm -rf .git/modules/the_submodule
