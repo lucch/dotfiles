@@ -26,7 +26,7 @@ if v:version >= 703
 endif
 set mouse=a
 "set clipboard=autoselectplus,exclude:cons\|linux
-set autochdir
+"set autochdir
 set modeline
 
 let mapleader=","
