@@ -94,6 +94,11 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
+" vim-markdown-pandoc
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
+
 " bindings
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 nmap <silent> <C-h> :wincmd h<CR>
