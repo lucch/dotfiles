@@ -1,5 +1,19 @@
 " Haskell
 
+let g:neoformat_enabled_haskell = ['hindent', 'stylishhaskell']
+
+let g:neomake_haskell_enabled_makers = ['hlint']
+
+vmap a= :Tabularize /=<CR>
+vmap a: :Tabularize /::<CR>
+vmap a- :Tabularize /-><CR>
+vmap a# :Tabularize /#-}<CR>
+
+augroup HaskellMaps
+  au FileType haskell setlocal formatprg=hindent
+  " au FileType haskell,lhaskell setlocal makeprg=cabal\ new-build
+augroup END
+
 " intero-neovim
 augroup interoMaps
   au!
@@ -17,7 +31,7 @@ augroup interoMaps
 
   " Reloading (pick one)
   " Automatically reload on save
-  au BufWritePost *.hs InteroReload
+  "au BufWritePost *.hs InteroReload
   " Manually save and reload
   au FileType haskell nnoremap <silent> <leader>wr :w \| :InteroReload<CR>
 
@@ -40,10 +54,10 @@ augroup interoMaps
 augroup END
 
 " Intero starts automatically. Set this if you'd like to prevent that.
-let g:intero_start_immediately = 1
+let g:intero_start_immediately = 0
 
 " Enable type information on hover (when holding cursor at point for ~1 second).
-let g:intero_type_on_hover = 1
-" OPTIONAL: Make the update time shorter, so the type info will trigger faster.
-set updatetime=1000
+" let g:intero_type_on_hover = 1
+" " OPTIONAL: Make the update time shorter, so the type info will trigger faster.
+" set updatetime=1000
 

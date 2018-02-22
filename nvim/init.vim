@@ -7,6 +7,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'godlygeek/tabular'
+Plug 'sbdchd/neoformat'
 
 " Haskell
 Plug 'parsonsmatt/intero-neovim', { 'for': 'haskell' }

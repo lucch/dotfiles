@@ -10,9 +10,6 @@ set colorcolumn=+1
 " Buffers
 set hidden
 set autoread  " auto reload files changed on disk
-map <leader>n :bn<cr>
-map <leader>p :bp<cr>
-map <leader>d :bd<cr>
 
 " Defaults to tabs over spaces
 set shiftwidth=4
@@ -21,7 +18,6 @@ set expandtab
 
 " Mouse
 set mouse=a
-
 
 " Leader
 let mapleader=","
