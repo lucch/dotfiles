@@ -3,15 +3,16 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " General/editing
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'neomake/neomake'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'vim-airline/vim-airline'
-Plug 'godlygeek/tabular'
 Plug 'sbdchd/neoformat'
+Plug 'godlygeek/tabular'
+Plug 'vim-airline/vim-airline'
 
 " Haskell
+Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
 Plug 'parsonsmatt/intero-neovim', { 'for': 'haskell' }
-Plug 'neomake/neomake'
 
 " Colors
 Plug 'iCyMind/NeoSolarized'
