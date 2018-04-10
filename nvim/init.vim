@@ -9,6 +9,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'sbdchd/neoformat'
 Plug 'godlygeek/tabular'
 Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'pbrisbin/vim-syntax-shakespeare'
 
 " Haskell
 Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }

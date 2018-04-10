@@ -6,10 +6,14 @@ set cursorline
 set scrolloff=3 " some lines around scroll for context
 set textwidth=80
 set colorcolumn=+1
+set noswapfile
 
 " Buffers
 set hidden
 set autoread  " auto reload files changed on disk
+map <leader>bn :bn<cr>
+map <leader>bp :bp<cr>
+map <leader>bD :bd!<cr>
 
 " Defaults to tabs over spaces
 set shiftwidth=4

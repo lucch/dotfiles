@@ -29,11 +29,6 @@ vmap a: :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
 vmap a# :Tabularize /#-}<CR>
 
-augroup HaskellMaps
-  au FileType haskell setlocal formatprg=hindent
-  " au FileType haskell,lhaskell setlocal makeprg=cabal\ new-build
-augroup END
-
 " intero-neovim
 augroup interoMaps
   au!
