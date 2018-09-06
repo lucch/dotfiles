@@ -19,7 +19,7 @@ Plug 'parsonsmatt/intero-neovim', { 'for': 'haskell' }
 
 " React.js
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'mattn/emmet-vim'
 
 " Colors
