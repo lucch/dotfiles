@@ -17,6 +17,11 @@ Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
 Plug 'parsonsmatt/intero-neovim', { 'for': 'haskell' }
 
+" React.js
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript' }
+Plug 'mattn/emmet-vim'
+
 " Colors
 Plug 'iCyMind/NeoSolarized'
 
