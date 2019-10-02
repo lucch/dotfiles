@@ -1,6 +1,6 @@
 " Haskell
 
-let g:neoformat_enabled_haskell = ['hindent', 'stylishhaskell']
+let g:neoformat_enabled_haskell = ['hindent', 'brittany', 'stylishhaskell']
 
 let g:neomake_haskell_enabled_makers = ['hlint']
 

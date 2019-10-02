@@ -16,8 +16,8 @@ map <leader>bp :bp<cr>
 map <leader>bD :bd!<cr>
 
 " Defaults to tabs over spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 
 " Mouse
