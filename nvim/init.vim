@@ -14,8 +14,8 @@ Plug 'tpope/vim-surround'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
 " Haskell
-Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
-Plug 'parsonsmatt/intero-neovim', { 'for': 'haskell' }
+" Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
+" Plug 'parsonsmatt/intero-neovim', { 'for': 'haskell' }
 
 " Swift
 Plug 'keith/swift.vim'

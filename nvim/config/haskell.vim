@@ -1,6 +1,8 @@
 " Haskell
 
-let g:neoformat_enabled_haskell = ['hindent', 'brittany', 'stylishhaskell']
+let g:neoformat_enabled_haskell = ['ormolu']
+let g:neoformat_haskell_ormolu = { 'exe': 'ormolu', 'args': [] }
+let g:ormolu_ghc_opt = ['TypeApplications', 'RankNTypes']
 
 let g:neomake_haskell_enabled_makers = ['hlint']
 
@@ -15,7 +17,7 @@ let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 
 " Set a language to use its alternate delimiters by default
-let g:NERDAltDelims_haskell = 1
+let g:NERDAltDelims_haskell = 0
 
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
