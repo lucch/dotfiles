@@ -3,6 +3,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " General/editing
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'johmsalas/text-case.nvim'
 Plug 'neomake/neomake'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
@@ -13,9 +14,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
-" Haskell
-" Plug 'itchyny/vim-haskell-indent', { 'for': 'haskell' }
-" Plug 'parsonsmatt/intero-neovim', { 'for': 'haskell' }
+" Ruby
+Plug 'vim-ruby/vim-ruby'
 
 " Swift
 Plug 'keith/swift.vim'
@@ -24,9 +24,6 @@ Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'mattn/emmet-vim'
-
-" Colors
-Plug 'iCyMind/NeoSolarized'
 
 call plug#end()
 
